@@ -1,0 +1,388 @@
+/* ========================================
+
+    CODE YOUR STYLES BELOW!
+
+   ====================================== */
+body {
+background-color: rgb(236, 228, 228);
+font-family: monospace;
+}
+
+button {
+    font-family: monospace;
+}
+
+/* Facebook Button */
+
+.facebook-style-btn {
+    border-radius: 2px;
+    font-size: 0.9rem;
+    padding: 6px 12px
+}
+
+.facebook-style-dark {
+    -moz-box-shadow:    inset 0 1px 0 0 #4d73bf;
+    -webkit-box-shadow: inset 0 1px 0 0 #4d73bf;
+    box-shadow:         inset 0 1px 0 0 #4d73bf;
+    background: #4267b2;
+    border: solid 1px #4267b2;
+    color: white;
+    text-shadow: 0 1px 0 #3359a5;
+}
+
+    .facebook-style-dark:hover {
+        background: #2b54a7;
+    }
+
+    .facebook-style-dark:active {
+        background: #1d4698;
+        border-color: #1d4698;
+    }
+
+.facebook-style-light {
+    background: #f6f7f9;
+    border: solid 1px #ced0d4;
+    color: #4b4f56;
+}
+
+    .facebook-style-light:hover {
+        background: #e9ebee;
+    }
+
+    .facebook-style-light:active {
+        background: #d8dade;
+        border-color: #d8dade;
+    }
+
+/*3D button 1*/
+
+
+.btn-3d-1 {
+    position: relative;
+    background: #faafcc;
+    border: none;
+    color: rgba(16, 11, 11, 0.49);
+    font-weight: bold;
+    padding: 15px 24px;
+    font-size: 1.4rem;
+    box-shadow: -6px 6px 0 #de6996;
+    outline: none;
+}
+
+    .btn-3d-1:hover {
+        background: #f8d0df;
+    }
+    .btn-3d-1:active {
+        background: #e781a7;
+        top: 3px;
+        left: -3px;
+        box-shadow: -3px 3px 0 #e0447d;
+    }
+
+    .btn-3d-1::before {
+        position: absolute;
+        display: block;
+        content: "";
+        height: 0;
+        width: 0;
+
+        border: solid 6px transparent;
+        border-right: solid 6px #de6996;
+        border-left-width: 0px;
+        background: none;
+        top: 0px;
+        left:-6px;
+    }
+
+    .btn-3d-1::after {
+        position: absolute;
+        display: block;
+        content: "";
+        height: 0;
+        width: 0;
+
+        border: solid 6px transparent;
+        border-top: solid 6px #de6996;
+        border-bottom-width: 0px;
+        bottom: -6px;
+        right: 0px;
+    }
+
+    .btn-3d-1:active::before{
+        border: solid 3px transparent;
+        border-right: solid 3px #de6996;
+        border-left-width: 0px;
+        left: -3px;
+    }
+
+    .btn-3d-1:active::after{
+        border: solid 3px transparent;
+        border-top: solid 3px #de6996;
+        border-bottom-width: 0;
+        bottom: -3px;
+    }
+
+/*3d circle button */
+
+.btn-3d-2{    
+    position: relative;
+
+    background: hsl(163, 41%, 50%);
+    background: -webkit-radial-gradient( hsl(163, 41%, 55%), hsl(163, 41%, 45%));
+    background: -o-radial-gradient( hsl(163, 41%, 55%), hsl(163, 41%, 45%));
+    background: -moz-radial-gradient( hsl(163, 41%, 55%), hsl(163, 41%, 45%));
+    background: radial-gradient(hsl(163, 41%, 55%), hsl (163, 41%, 45%));
+
+    font-size: 1.4rem;
+    text-shadow: 0 -1px 0 hsl(163, 41%, 30%);
+    color: white;
+    border: solid 1px hsl(163, 41%, 20%);
+    border-radius: 100%;
+    height: 120px;
+    width: 120px;
+    z-index: 4;
+
+    outline: none;
+
+    box-shadow: inset 0 1px 0 hsl(163, 41%, 55%),
+                0 2px 0 hsl(163, 41%, 25%),
+                0 2px 0 hsl(163, 41%, 23%),
+                0 3px 0 hsl(163, 41%, 21%),
+                0 4px 0 hsl(163, 41%, 19%),
+                0 5px 0 hsl(163, 41%, 17%),
+                0 6px 0 hsl(163, 41%, 15%),
+                0 7px 0 hsl(163, 41%, 13%);
+}
+
+    .btn-3d-2:hover {
+        background: -webkit-radial-gradient( hsl(163, 41%, 50%), hsl(163, 41%, 40%));
+        background: -o-radial-gradient( hsl(163, 41%, 50%), hsl(163, 41%, 40%));
+        background: -moz-radial-gradient( hsl(163, 41%, 50%), hsl(163, 41%, 40%));
+        background: radial-gradient( hsl(163, 41%, 50%), hsl(163, 41%, 40%));
+    }
+
+    .btn-3d-2:active {
+        background: -webkit-radial-gradient(hsl(163, 41%, 48%), hsl(163, 41%, 38%));
+        background: -o-radial-gradient(hsl(163, 41%, 48%), hsl(163, 41%, 38%));
+        background: -moz-radial-gradient(hsl(163, 41%, 48%), hsl(163, 41%, 38%));
+        background: radial-gradient(hsl(163, 41%, 48%), hsl(163, 41%, 38%));
+
+        top: 2px;
+
+        box-shadow: inset 0 1px 0 hsl(163, 41%, 55%),
+                0 2px 0 hsl(163, 41%, 25%),
+                0 2px 0 hsl(163, 41%, 23%),
+                0 3px 0 hsl(163, 41%, 21%),
+                0 4px 0 hsl(163, 41%, 19%),
+                0 5px 0 hsl(163, 41%, 17%);
+
+    }
+
+/*gradient bordered buttons*/
+
+.gradient-button-1 {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding: 20px 40px;
+    font-size: 2rem;
+    font-weight: bold;
+    box-sizing: border-box;
+    background-color: #e7eef1;
+    border: solid 10px transparent;
+    border-image: linear-gradient( to right,#8fe5ad,#f7d486,#F27a7d );
+    border-image-slice: 1;
+    color: #d55b5d;
+    transition: all 0.3s ease-in-out;
+}
+
+    .gradient-button-1:hover {
+        background-image: linear-gradient(to right,#8fe5ad,#f7d486,#F27a7d );
+        color: white;
+    }
+
+.gradient-button-2 {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding: 20px 40px;
+    font-size: 2rem;
+    font-weight: bold;
+    box-sizing: border-box;
+    background-color: #e7eef1;
+    border: solid 4px transparent;
+    border-image: linear-gradient( to right,#8fe5ad,#f7d486,#F27a7d, transparent );
+    border-image-slice: 1;
+    color: #d55b5d;
+    transition: all 0.3s ease;
+}
+
+    .gradient-button-2:hover {
+        background-image: linear-gradient(to right,#8fe5ad,#f7d486,#F27a7d, transparent);
+        color: white;
+        border-right-style: none;
+    }
+
+
+/* animated buttons */
+
+.animated-button-1 {
+    position: relative;
+    display: inline-block;
+    padding: 20px 40px;
+    font-size: 1.4rem;
+    background-color:blue;
+
+    background-image: url(doodad.png);
+    background-size: 100px 100px;
+    border: solid 1px #555;
+    color: white;
+    transition: all ease 0.3s;
+}
+
+    .animated-button-1:hover {
+        animation: loading-button-animation 2s linear infinite;
+    }
+
+    @keyframes loading-button-animation {
+        from {
+            background-position: 0 0;
+        }
+        to {
+            background-position: 100px 0;
+        }
+    }
+
+
+.animated-button-2 {
+    position: relative;
+    display: inline-block;
+    padding: 20px 40px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    background-color: #da627d;
+
+    background-size: 100px 100px;
+    border: solid 1px #555;
+    color: #62dac0;
+    transition: all ease 0.3s;
+}
+
+    .animated-button-2::after {
+        position: absolute;
+        top: 30%;
+        right: 10px;
+        content: ">>";
+        transition: all ease 0.3s;
+        opacity: 0;
+    }
+
+    .animated-button-2:hover {
+        padding: 20px 60px 20px 20px;
+    }
+
+    .animated-button-2:hover::after {
+        right: 20px;
+        opacity: 1;
+    }
+
+/*toggle switch UI buttons*/
+
+.toggle-1 {
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px 0 0;
+}
+
+    .toggle-1_input {
+        display: none;
+    }
+
+    .toggle-1_button {
+        position: relative;
+        display: inline-block;
+        font-size: 1rem;
+        line-height: 20px;
+        text-transform: uppercase;
+        background-color: #a762a4;
+        border: solid 1px #a762a4;
+        color: white;
+        width: 80px;
+        height: 30px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+
+    .toggle-1_button::before {
+        position: absolute;
+        top: 5px;
+        left: 40px;
+        content: "off";
+        display: inline-block;
+        height: 20px;
+        padding: 0 2px;
+        background: white;
+        color: #a762a4;
+        transition: all 0.3s ease;
+    }
+
+        .toggle-1_input:checked + .toggle-1_button {
+            background: #d9c362;
+            border: solid 1px #d9c362;
+        }
+
+        .toggle-1_input:checked + .toggle-1_button::before {
+            left: 5px;
+            content: "on";
+            color: #d9c362;
+        }
+
+
+.toggle-2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px 0 0;
+}
+
+    .toggle-2_input {
+        display: none;
+    }
+
+    .toggle-2_button {
+        position: relative;
+        display: inline-block;
+        line-height: 20px;
+        text-transform: uppercase;
+        background: white;
+        color: black;
+        border: solid 1px #ccc;
+        padding: 5px 10px 5px 30px;
+        transition: 0.3s ease;
+        cursor: pointer;
+    }
+    
+    .toggle-2_button::before {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        background: #ccc;
+        content:"";
+        transition: 0.3s ease;
+        border-radius: 100%
+    }
+
+    .toggle-2_input:checked + .toggle-2_button {
+        background: #00b3b4;
+        border-color: #00b3b4;
+        color: white;
+    }
+
+    .toggle-2_input:checked + .toggle-2_button::before {
+        background-color: white;
+    }
